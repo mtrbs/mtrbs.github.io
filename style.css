@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.mv {
+    width: 100%;
+    /*相対位置*/
+    position: relative;
+
+}
+
+/*.slider {}よくわからない*/
+
+.slider img {
+    width: 100%;
+}
+
+/*ロゴと背景白の透明*/
+.logocenter {
+    background-color: rgba(251, 252, 255, 0.46);
+    width: 100%;
+    /*絶対位置*/
+    position: absolute;
+    /*左上値基準*/
+    top: 0;
+    text-align: center;
+    padding: 8px;
+}
+
+.logocenter img {
+    width: 200px;
+}
+
+.mvcopy {
+    /*絶対位置*/
+    position: absolute;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #766d6d;
+    left: 21%;
+    top: 25%;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+
+}
+
+/*こども絵画教室*/
+.kodomo {
+    /*絶対位置*/
+    position: absolute;
+    /*左上値基準*/
+    top: 50%;
+    left: 15.4%;
+    /*文字間隔*/
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    text-shadow: 1.5px 1.5px #766d6d;
+    color: #fff;
+}
+
+/*アトリエスバル*/
+h1 {
+    /*絶対位置*/
+    position: absolute;
+    /*左上値基準*/
+    top: 53%;
+    left: 15%;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1.5px 1.5px #766d6d;
+}
+
+.gnav {
+    /*絶対位置*/
+    position: absolute;
+    /*左上値基準*/
+    top: 62%;
+    left: 14.8%;
+}
+
+.gnav li {
+    border: thin solid #fff;
+    background-color: rgba(141, 136, 136, 0.39);
+    padding: 2px 8px;
+    margin: 8px;
+    width: 140px;
+}
+
+.gnav a {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+
+    /*リストボタン装飾
+    display: block;
+    border-left: 8px solid #474655;
+    border-top: 1px solid #474655;
+    border-right: 1px solid #474655;
+    border-bottom: 1px solid #474655;
+    padding: 3px 10px;
+    margin: 2px 0px;
+    text-align: left;
+    リストボタン装飾終わり*/
+    /*    行間間隔*/
+    /*    line-height: 2.3;*/
+
+}
+
+/*nav文字半透明*/
+.gnav a:hover {
+    opacity: .5
+}
+
+/*体験ボタン*/
+.item_btn {
+    /*絶対位置*/
+    position: absolute;
+    /*左上値基準*/
+    top: 60%;
+    left: 44%;
+}
+
+.item_btn a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #dee535;
+    padding: 18px 50px;
+    /*ゆっくり変わるアニメーション*/
+    transition: 1.5s;
+}
+
+.item_btn a:hover {
+    background-color: #fd6100;
+}
+
+section {
+    padding-top: 40px;
+}
+
+.ttl0 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.about_wrap {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+.mes0 {
+    text-align: center;
+    font-size: 19px;
+}
+
+.menu_wrap {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_cou,
+.menu_time {
+    width: 300px;
+    border: thin solid #766d6d;
+    padding: 40px;
+}
+
+.ttl {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.gallery_wrap1,
+.gallery_wrap2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery_wrap1 img,
+.gallery_wrap2 img {
+    width: 100%;
+}
+
+footer {
+    /*    background-color: #f7fc7f;*/
+    padding: 30px;
+}
+
+.footer_inner {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.minilogo {
+    padding: 20px;
+    text-align: center;
+}
+
+.minilogo img {
+    width: 200px;
+}
+
+.add p {
+    /*    font-size: 17px;*/
+}
+
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .logocenter img {
+        width: 150px;
+    }
+
+    h1,
+    .kodomo {
+        display: none;
+
+    }
+
+    .mvcopy {
+        font-size: 32px;
+        left: 0;
+        right: 0;
+        top: 25%;
+        margin: 0 auto;
+    }
+
+
+
+    .item_btn {
+        position: absolute;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+
+    .toggle {
+        display: block;
+        position: fixed;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px #333;
+        transition: .35s ease-in-out;
+        left: 6px;
+    }
+
+    .toggle span:nth-child(1) {
+        top: 9px;
+    }
+
+    .toggle span:nth-child(2) {
+        top: 18px;
+    }
+
+    .toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+
+    .toggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .toggle.active span:nth-child(2),
+    .toggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .gnav {
+        position: absolute;
+        top: -110%;
+        right: 0;
+        left: auto;
+        transition: .6s;
+    }
+
+    .navactive {
+        position: absolute;
+        top: 20%;
+        left: auto;
+        right: 0;
+    }
+}
