@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>こども絵画教室 atelierdesubaru</title>
+    <meta name="description" content="子ども絵画教室アトリエスバル">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--slider読み込み-->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!--slider読み込み終わり-->
+
+    <!--Jクエリ読み込み-->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!--Jクエリ読み込み終わり-->
+
+    <!--jクエリの後にsliderのスクリプトjs読み込み-->
+    <script src="js/slick.min.js"></script>
+    <!--jクエリの後にsliderのスクリプトjs読み込み終わり-->
+</head>
+
+
+<body>
+    <!--mvスライダー-->
+    <div class="mv">
+        <ul class="slider">
+            <li><a href="#"><img src="image/mv0.jpg" alt="絵具"></a></li>
+            <li><a href="#"><img src="image/mv1.jpg" alt="絵具"></a></li>
+            <li><a href="#"><img src="image/mv2.jpg" alt="絵具"></a></li>
+            <li><a href="#"><img src="image/mv3.jpg" alt="絵具"></a></li>
+            <li><a href="#"><img src="image/mv4.jpg" alt="絵具"></a></li>
+            <li><a href="#"><img src="image/mv5.jpg" alt="絵具"></a></li>
+        </ul>
+        <!--mvスライダー終わり-->
+
+        <p class="kodomo">こども絵画教室</p>
+        <h1>アトリエ スバル</h1>
+
+        <!-- センターmvメッセージ-->
+        <p class="mvcopy">新時代の生きる力を育む<br>
+            「お絵描きコミュニケーション」</p>
+        <!-- センターmvメッセージ終わり-->
+        
+        <!--ボタン-->
+        <div class="item_btn">
+            <a href="">体験申し込み</a>
+        </div>
+        <!--ボタン終わり-->
+
+
+        <!--縦nav-->
+        <nav class="gnav">
+            <ul>
+                <li><a href="#ab"> ABOUT </a></li>
+                <li><a href="#cou"> コース / 料金</a></li>
+                <li><a href="#time"> 時間割 </a></li>
+                <li><a href="#draw"> みんなの作品 </a></li>
+            </ul>
+        </nav>
+        <!--縦nav終わり-->
+
+        <!--logo 上部センター-->
+        <div class="logocenter">
+            <img src="image/atelierdesubaru-logo.png" alt="">
+        </div>
+        <!--logo 上部センター終わり-->
+
+
+    </div>
+    <!--mvスライダー終わり-->
+
+    <section id="ab">
+        <h3 class="ttl0">ABOUT </h3>
+        <div class="about_wrap">
+            <p class="mes0">アトリエ スバルは「アトリエ × ギャラリー × 教室」の設備を持つ絵画教室です。<br>大好きなことに夢中になる、お友だちと問題を乗り越える、ワクワクとした自分だけの発見や創作は、やがて「ひらめき」「想像力」「伝える力」へと成長していくかもしれません。<br>好きなことや得意なことを伸ばし、自分にしかできない表現力を育む場所を造っていきます。
+            </p>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="menu_wrap">
+            <div class="menu_cou" id="cou">
+                <h3 class="ttl">コース / 料金 </h3>
+                <!--                <p>年中さん（４〜５歳）/月２回　￥4000 </p>-->
+                <!--                <p> 年長さん（５〜６歳）/月４回　￥8000</p>-->
+            </div>
+
+
+            <div class="menu_time" id="time">
+                <h3 class="ttl"> 時間割 </h3>
+                <!--                <p>水・金　16:00〜<br>土　14:00〜</p>-->
+            </div>
+        </div>
+    </section>
+    <section id="draw">
+        <h3 class="ttl0">みんなの作品</h3>
+        <div class="gallery_wrap1">
+            <div><img src="image/art0.jpg" alt=""> </div>
+            <div><img src="image/art1.jpg" alt=""></div>
+            <div><img src="image/art2.jpg" alt=""></div>
+            <div><img src="image/seisaku1.jpg" alt=""></div>
+        </div>
+
+        <div class="gallery_wrap2">
+            <div><img src="image/art3.jpg" alt=""></div>
+            <div><img src="image/art4.jpg" alt=""></div>
+            <div> <img src="image/art5.jpg" alt=""></div>
+            <div><img src="image/seisaku2.jpg" alt=""></div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_inner">
+            <div class="minilogo">
+                <img src="image/atelierdesubaru-logo.png" alt="">
+            </div>
+
+            <div class="add">
+                <!--                <p>『アトリエ スバル』</p>-->
+                <!--                <p>大阪府堺市南区釜室000-0 </p>-->
+                <!--                <p>TEL 072-000-0000</p>-->
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!--スライダー-->
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+        });
+    </script>
+    <!--スライダー終わり-->
+
+
+
+
+
+
+    <!--jクエリでヌルット動かす-->
+    <script>
+        $(function() {
+            $('a[href^="#"]').click(function() {
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    <!--jクエリでヌルット動かす終わり-->
+
+
+
+
+</body></html>
